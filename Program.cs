@@ -37,6 +37,7 @@ namespace ServerSocket
             // restituisce una variabile di tipo socket.
             Socket client = listenerSocket.Accept();
 
+
             Console.WriteLine("Client IP: " + client.RemoteEndPoint.ToString());
 
             // mi attrezzo per ricevere un messaggio dal client
