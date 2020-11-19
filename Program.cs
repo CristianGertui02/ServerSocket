@@ -84,26 +84,26 @@ namespace ServerSocket
                         client.Send(buff);
                         break;
 
-                    case "buon pomeriggio":
+                    case "buongiorno":
                         sendedString = "Salve";
                         buff = Encoding.ASCII.GetBytes(sendedString);
                         client.Send(buff);
                         break;
 
-                    case "come stai":
+                    case "come stai?":
                         sendedString = "Bene";
                         buff = Encoding.ASCII.GetBytes(sendedString);
                         client.Send(buff);
                         break;
 
-                    case "bene":
-                        sendedString = "ok";
+                    case "che fai?":
+                        sendedString = "Niente";
                         buff = Encoding.ASCII.GetBytes(sendedString);
                         client.Send(buff);
                         break;
 
-                    case "male":
-                        sendedString = "ok";
+                    case "Quit":
+                        sendedString = "";
                         buff = Encoding.ASCII.GetBytes(sendedString);
                         client.Send(buff);
                         break;
