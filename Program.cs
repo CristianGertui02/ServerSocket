@@ -102,12 +102,6 @@ namespace ServerSocket
                         client.Send(buff);
                         break;
 
-                    case "Quit":
-                        sendedString = "";
-                        buff = Encoding.ASCII.GetBytes(sendedString);
-                        client.Send(buff);
-                        break;
-
                     default:
                         sendedString = "Non ho capito";
                         buff = Encoding.ASCII.GetBytes(sendedString);
